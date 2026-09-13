@@ -229,6 +229,46 @@ export default function BeylikduzundeOtoYedekParca() {
           </div>
         </section>
       </article>
-    </main>
+    
+      <a
+        href="https://wa.me/905435571529?text=Merhaba%2C%20Beylikd%C3%BCz%C3%BC%27nde%20oto%20yedek%20par%C3%A7a%20i%C3%A7in%20bilgi%20almak%20istiyorum."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp'tan oto yedek parça sor"
+        style={{
+          position: "fixed",
+          right: "22px",
+          bottom: "22px",
+          width: "58px",
+          height: "58px",
+          borderRadius: "50%",
+          background: "#25D366",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 9999,
+          boxShadow: "0 8px 24px rgba(0,0,0,.25)",
+        }}
+      >
+        <svg
+          width="31"
+          height="31"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M16 3C8.82 3 3 8.82 3 16c0 2.29.6 4.44 1.65 6.3L3 29l6.86-1.6A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Z"
+            fill="white"
+          />
+          <path
+            d="M21.65 18.45c-.31-.16-1.84-.91-2.12-1.01-.28-.1-.49-.16-.7.16-.21.31-.8 1.01-.98 1.22-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.5-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54h-.6c-.21 0-.54.08-.83.39-.28.31-1.08 1.06-1.08 2.59s1.11 3.01 1.27 3.22c.16.21 2.18 3.33 5.28 4.67.74.32 1.32.51 1.77.65.74.24 1.42.21 1.95.13.59-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.28-.21-.59-.36Z"
+            fill="#25D366"
+          />
+        </svg>
+      </a>
+
+</main>
   );
 }
