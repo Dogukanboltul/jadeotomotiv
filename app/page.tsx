@@ -98,37 +98,43 @@ const categories = [
   {
     no: "01",
     title: "Fren Sistemi",
-    text: "Fren balatası, fren diski ve ilgili fren parçaları.",
+    text: "Fren balatası, fren diski ve fren sistemi parçaları.",
+    image: "/jade-home/debriyaj-seti.jpg",
     href: "/blog/volvo-fren-balatasi-istanbul",
   },
   {
     no: "02",
     title: "Bakım & Filtre",
-    text: "Filtreler ve periyodik bakımda ihtiyaç duyulan parçalar.",
+    text: "Periyodik bakım ve filtre grubu parçaları.",
+    image: "/jade-home/parca1.jpg",
     href: "/blog/volvo-bakim-parcalari-istanbul",
   },
   {
     no: "03",
     title: "Ön Takım",
-    text: "Salıncak, rotil, rot başı ve yürüyen aksam parçaları.",
+    text: "Salıncak, rotil, rot başı ve yürüyen aksam.",
+    image: "/jade-home/elektronik-modul.jpg",
     href: "/blog/volvo-on-takim-parcalari-istanbul",
   },
   {
     no: "04",
     title: "Süspansiyon",
     text: "Amortisör, takoz, yay ve süspansiyon parçaları.",
+    image: "/jade-home/cam-dugmesi.jpg",
     href: "/blog/volvo-suspansiyon-parcalari-istanbul",
   },
   {
     no: "05",
     title: "Motor Parçaları",
-    text: "Araç ve motor bilgisine göre motor parça talepleri.",
+    text: "Araç ve motor bilgisine uygun yedek parçalar.",
+    image: "/jade-home/parca1.jpg",
     href: "/otomotiv-yedek-parca",
   },
   {
     no: "06",
     title: "Elektrik & Aydınlatma",
-    text: "Elektrik, elektronik ve aydınlatma grubu parçaları.",
+    text: "Elektrik, elektronik, far ve aydınlatma parçaları.",
+    image: "/jade-home/far.jpg",
     href: "/arac-yedek-parca",
   },
 ];
@@ -445,25 +451,37 @@ export default function Home() {
                 <Link
                   key={category.title}
                   href={category.href}
-                  className="group bg-[#fafbfb] p-7 transition hover:bg-white md:p-9"
+                  className="group relative overflow-hidden bg-white"
                 >
-                  <div className="flex items-start justify-between">
-                    <span className="text-xs font-black text-[#90a2ad]">
-                      {category.no}
-                    </span>
+                  <div className="relative h-[190px] overflow-hidden bg-[#f4f6f7] md:h-[220px]">
+                    <Image
+                      src={category.image}
+                      alt={category.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-contain p-5 transition duration-500 group-hover:scale-105"
+                    />
 
-                    <span className="text-xl text-[#a2b0b9] transition group-hover:translate-x-1 group-hover:text-[#102c40]">
-                      →
+                    <span className="absolute left-5 top-5 flex h-9 min-w-9 items-center justify-center rounded-full bg-[#102c40] px-3 text-[11px] font-black text-white">
+                      {category.no}
                     </span>
                   </div>
 
-                  <h3 className="mt-12 text-2xl font-black tracking-[-.025em] text-[#102c40]">
-                    {category.title}
-                  </h3>
+                  <div className="flex min-h-[145px] items-start justify-between gap-5 p-6 md:p-7">
+                    <div>
+                      <h3 className="text-xl font-black tracking-[-.025em] text-[#102c40] md:text-2xl">
+                        {category.title}
+                      </h3>
 
-                  <p className="mt-3 max-w-sm text-sm leading-6 text-[#667985]">
-                    {category.text}
-                  </p>
+                      <p className="mt-2 max-w-sm text-sm leading-6 text-[#667985]">
+                        {category.text}
+                      </p>
+                    </div>
+
+                    <span className="mt-1 text-2xl text-[#8fa0aa] transition group-hover:translate-x-1 group-hover:text-[#102c40]">
+                      →
+                    </span>
+                  </div>
                 </Link>
               ))}
 
