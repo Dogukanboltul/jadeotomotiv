@@ -106,7 +106,7 @@ const categories = [
     no: "02",
     title: "Bakım & Filtre",
     text: "Periyodik bakım ve filtre grubu parçaları.",
-    image: "/jade-home/parca1.jpg",
+    image: "/jade-home/bakim.webp",
     href: "/blog/volvo-bakim-parcalari-istanbul",
   },
   {
